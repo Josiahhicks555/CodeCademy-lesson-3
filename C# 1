@@ -1,0 +1,21 @@
+using System;
+
+namespace MyOperators
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      bool Food = true;
+      bool Running = true;
+      bool Games = false;
+      
+      bool yourNeeds = (Food && Running);
+      bool friendNeeds = (Food || Games);
+      
+      bool tripDecision = (yourNeeds && friendNeeds);
+      Console.WriteLine(tripDecision);
+
+    }
+  }
+}
